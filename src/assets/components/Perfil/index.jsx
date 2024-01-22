@@ -7,14 +7,14 @@ const Perfil = ({nomeUsuario}) => {
     // }
 
     return (
-        <header className={styles.header}>
+        <div className={styles.perfil}>
             {/* <img className='perfil-avatar' src={usuario.avatar}/>
             <h3 className='perfil-titulo'>{usuario.nome}</h3> */}
             <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`}/>
             <h1 className={styles.name}>
                 {nomeUsuario}
             </h1>
-        </header>
+        </div>
     )
 }
 

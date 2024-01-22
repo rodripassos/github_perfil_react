@@ -10,10 +10,15 @@ function App() {
 
   return (
     <>
-      Digite o usuário Github: <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)}/>
-
+      <header className="header">
+          <h1>Projetos do usuário:</h1> 
+          <input type="text" placeholder='Digite o usuário do Github' onBlur={(e) => setNomeUsuario(e.target.value)}/>
+          
+      </header>
+      
       {nomeUsuario.length > 4 && (
         <>
+          
           <Perfil nomeUsuario={nomeUsuario} />      
           <Reposlist nomeUsuario={nomeUsuario}/>
         </>

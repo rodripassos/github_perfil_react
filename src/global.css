@@ -11,6 +11,19 @@
     margin: 0 auto;
 }
 
+.header {
+    background-color: var(--corPrincipal);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 40px;
+}
+
+.header input {
+    margin-left: 10px;
+    border: solid 2px var(--corSecundaria);
+    padding: 10px;
+}
+
 :root {
     --corPrincipal:#f9ca24;
     --corSecundaria: #111;
